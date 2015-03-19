@@ -1,0 +1,26 @@
+# fips-nanovg
+---
+
+imports:
+    fips-glew:
+        git: https://github.com/fungos/fips-glew.git
+    fips-glfw:
+        git: https://github.com/floooh/fips-glfw.git
+
+run:
+    example_gl3:
+        cwd: nanovg/example
+    example_gl2:
+        cwd: nanovg/example
+    example_fbo:
+        cwd: nanovg/example
+    example_gles3:
+        cwd: nanovg/example
+    example_gles2:
+        cwd: nanovg/example
+
+exports:
+    header-dirs:
+        - nanovg/src
+    modules:
+        nanovg: .
