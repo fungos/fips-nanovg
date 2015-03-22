@@ -12,18 +12,19 @@ endif()
 
 add_definitions(-DNANOVG_GLEW)
 add_definitions(-DDEMO_MSAA)
+add_definitions(-DGLEW_STATIC) # tell glew headers we are static linking with glew
 
 fips_begin_lib(nanovg)
     include_directories(nanovg/src)
-    fips_dir(nanovg/src)
+    fips_dir(nanovg)
     fips_files(
-        fontstash.h
-        nanovg.c
-        nanovg.h
-        nanovg_gl.h
-        nanovg_gl_utils.h
-        stb_image.h
-        stb_truetype.h
+        src/fontstash.h
+        src/nanovg.c
+        src/nanovg.h
+        src/nanovg_gl.h
+        src/nanovg_gl_utils.h
+        src/stb_image.h
+        src/stb_truetype.h
     )
 fips_end_lib()
 
