@@ -14,9 +14,9 @@ run:
         cwd: nanovg/example
     example_fbo:
         cwd: nanovg/example
-    example_gles3:
+    example_gl3_msaa:
         cwd: nanovg/example
-    example_gles2:
+    example_gl2_msaa:
         cwd: nanovg/example
 
 exports:
